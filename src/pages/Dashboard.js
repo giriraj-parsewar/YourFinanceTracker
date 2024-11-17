@@ -94,6 +94,14 @@ const Dashboard = () => {
       querySnapshot.forEach((doc) => {
         transactionArray.push({ ...doc.data(), id: doc.id });
       });
+  
+      // Sort the transactions by date in ascending order
+      transactionArray.sort((a, b) => {
+        const dateA = new Date(a.date.split('-').reverse().join('-')); // Convert DD-MM-YYYY to YYYY-MM-DD
+        const dateB = new Date(b.date.split('-').reverse().join('-'));
+        return dateA - dateB; 
+      });
+  
       setTransactions(transactionArray);
       toast.success("Transaction Fetched!");
     }

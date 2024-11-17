@@ -5,19 +5,19 @@ const ChartComponent = ({ transactions }) => {
   const chartData = {
     options: {
       chart: {
-        id: "basic-line", // Change the chart ID if needed
+        id: "basic-line",
         toolbar: {
-          show: false, // Hide the chart toolbar
+          show: false,
         },
       },
       xaxis: {
-        categories: transactions.map((transaction) => transaction.date), // Use dates for X-axis
+        categories: transactions.map((transaction) => transaction.date), // Use sorted dates for X-axis
       },
       stroke: {
         curve: "smooth",
         width: 2,
       },
-      colors: ["var(--primary-purple)"], // Set the color for the line, you can use any valid CSS color here
+      colors: ["var(--primary-purple)"],
     },
     series: [
       {
