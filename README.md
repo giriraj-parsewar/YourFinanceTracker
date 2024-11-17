@@ -38,12 +38,7 @@ Start the development server:
     ```bash
        npm start
 
-       
-##Usage
-- Athentication: Sign up or log in using email/password or Google.
-- Managing Transactions: Add, edit, or delete income/expense records.
-- Data Visualization: View financial data in charts and tables.
-- Import/Export: Manage your financial data using CSV files.
+
 
 
 
