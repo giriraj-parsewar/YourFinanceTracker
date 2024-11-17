@@ -63,7 +63,7 @@ const Home = () => {
         </div>
       </section>
       <footer className="footer">
-        <p>&copy; 2023 Finance Tracker. All rights reserved.</p>
+        <p className="footer-p">@ Made by Giri </p>
       </footer>
       
     </div>

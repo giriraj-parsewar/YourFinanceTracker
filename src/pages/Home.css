@@ -171,4 +171,11 @@ body, html {
     position: relative;
     bottom: 0;
     width: 100%;
+    align-items: center;
+}
+
+.footer-p {
+  font: 100% 'Arial', sans-serif;
+  margin: 0 auto;
+  padding: 0 2px;
 }
